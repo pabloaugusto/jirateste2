@@ -1,0 +1,10 @@
+deployments:
+  environmentMapping:
+    test:
+      - "DEV-*"
+    dev:
+      - "dev"
+    homolog:
+      - "homolog"
+    prod:
+      - "prod"
