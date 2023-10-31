@@ -3,8 +3,8 @@ deployments:
     testing:
       - "DEV-*"
     development:
-      - "dev"
+      - "development"
     staging:
-      - "homolog"
+      - "staging"
     production:
-      - "prod" 
+      - "production"
