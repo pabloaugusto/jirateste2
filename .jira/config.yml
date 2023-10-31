@@ -7,4 +7,4 @@ deployments:
     staging:
       - "homolog"
     production:
-      - "prod"
+      - "prod" 
