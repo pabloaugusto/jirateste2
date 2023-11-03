@@ -1,0 +1,30 @@
+name: Push master branch to Heroku
+concurrency: deploy-staging
+
+on:
+  push:
+    branches:
+      - staging
+      - homolog
+
+env:
+  HEROKU_APP_NAME: staging-cr
+
+jobs:
+  deployment:
+    environment:
+      name: staging-cr
+      url: https://stagingcr.com.br
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Teste
+        run:
+          cat > ~/.netrc <<EOF
+          EOF
+#
+#      - name: Add staging remote to git
+#        run: git remote add staging https://git.heroku.com/${HEROKU_APP_NAME}.git
+#
+#      - name: Push master branch to Heroku
+#        run: git push -f staging master:master

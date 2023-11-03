@@ -1,10 +1,16 @@
 deployments:
   environmentMapping:
-    testing:
-      - "DEV-*"
     development:
-      - "development"
+      - "DEV-*"
+      - "MKTP-*"
+      - "JIRA-PROJECT-PREFIX-*"
+    testing:
+      - "testing"
+      - "test"
     staging:
       - "staging"
+      - "stg"
+      - "homolog"
     production:
       - "production"
+      - "prod"
