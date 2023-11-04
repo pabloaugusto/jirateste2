@@ -1,4 +1,4 @@
-name: Push master branch to Heroku
+name: Push test staging
 concurrency: deploy-staging
 
 on:
@@ -13,7 +13,7 @@ env:
 jobs:
   deployment:
     environment:
-      name: staging-cr
+      name: "staging-teste"
       url: https://stagingcr.com.br
     runs-on: ubuntu-latest
 
