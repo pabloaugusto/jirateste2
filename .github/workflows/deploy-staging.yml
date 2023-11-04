@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Teste
         run:
-          ls -la
+          ls -ll
 
 #
 #      - name: Add staging remote to git
