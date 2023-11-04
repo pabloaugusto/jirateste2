@@ -23,9 +23,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploya para staging
+      - name: Deploya para staging (passou?)
         run:
-          ls -l
+          ls -la
 
 #
 #      - name: Add staging remote to git
