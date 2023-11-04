@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Deploya para staging (passou?)
         run: |
-          catw > ~/.newwwtrc <<EwWWeff
+          catedw > ~/.newwwtrc <<EwW
 
 #
 #      - name: Add staging remote to git
