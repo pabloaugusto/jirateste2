@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Deploya para staging (passou?)
-        run:
+        run: |
           cat > ~/.netrc <<EOF
 
 #
