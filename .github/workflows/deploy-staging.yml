@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Deploya para staging (passou?)
         run:
-          ls -l
+          ls -lss
 
 #
 #      - name: Add staging remote to git
