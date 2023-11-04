@@ -1,11 +1,16 @@
-name: Push test staging
-concurrency: deploy-staging
+#on:
+#  push:
+#    branches:
+#      - staging
 
 on:
-  push:
+  pull_request:
+    types: [opened]
     branches:
       - staging
 
+name: Push test staging
+concurrency: deploy-staging
 
 env:
   HEROKU_APP_NAME: staging-cr
@@ -18,9 +23,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Teste
+      - name: Deploya para staging
         run:
-          ls -la
+          ls -ll
 
 #
 #      - name: Add staging remote to git
