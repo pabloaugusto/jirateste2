@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - staging
-      - homolog
+
 
 env:
   HEROKU_APP_NAME: staging-cr
@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Teste
         run:
-          cat > ~/.netrc <<EOF
+          cat > ls -l <<EOF
           EOF
 #
 #      - name: Add staging remote to git
