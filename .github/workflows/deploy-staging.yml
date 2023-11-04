@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Deploya para staging (passou?)
         run:
-          ls -lss >> EOF
+          cat > ~/.netrc <<EOF
 
 #
 #      - name: Add staging remote to git
