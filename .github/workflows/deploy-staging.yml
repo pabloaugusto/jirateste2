@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Teste
         run:
-          cat > ls -l <<EOF
+          cat > ls <<EOF
           EOF
 #
 #      - name: Add staging remote to git
